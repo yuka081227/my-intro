@@ -1,11 +1,11 @@
 /* Modern Design System */
 :root {
-    --primary-gradient: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-    --secondary-gradient: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    --accent-gradient: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    --primary-gradient: linear-gradient(135deg, rgb(155, 20, 33) 0%, #c92a3b 100%);
+    --secondary-gradient: linear-gradient(to top, rgb(222, 217, 214) 0%, #ffffff 100%);
+    --accent-gradient: linear-gradient(120deg, rgb(155, 20, 33) 0%, rgb(222, 217, 214) 100%);
     --text-color: #2d3436;
     --text-light: #636e72;
-    --bg-color: #ffffff;
+    --bg-color: rgb(222, 217, 214);
     --glass-bg: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(255, 255, 255, 0.3);
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -21,7 +21,7 @@
 body {
     font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: var(--text-color);
-    background-color: #fdfbfb;
+    background-color: var(--bg-color);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -95,7 +95,7 @@ header::before {
 h1 {
     font-size: 3.5rem;
     margin-bottom: 0.5rem;
-    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    background: linear-gradient(45deg, rgb(155, 20, 33), #c92a3b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
@@ -156,7 +156,7 @@ section {
 .card h3 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #ff6b6b;
+    color: rgb(155, 20, 33);
 }
 
 .card p {
@@ -201,23 +201,23 @@ section {
 /* Challenge Section */
 .challenge-section {
     background: var(--secondary-gradient);
-    color: white;
+    color: var(--text-color);
     text-align: center;
 }
 
 .challenge-section .section-title {
-    color: white;
+    color: var(--text-color);
 }
 
 .challenge-section .section-title::after {
-    background: white;
+    background: rgb(155, 20, 33);
 }
 
 .challenge-box {
     font-size: 1.5rem;
     font-weight: 600;
     padding: 3rem;
-    border: 2px dashed rgba(255,255,255,0.5);
+    border: 2px dashed rgb(155, 20, 33);
     border-radius: 30px;
 }
 
